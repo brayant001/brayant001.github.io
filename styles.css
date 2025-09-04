@@ -1,0 +1,363 @@
+/* Fuente moderna de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Fondo y tipografía general */
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #e0e0e0;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 15px;
+  padding-top: 60px; /* Menú fijo */
+}
+
+/* Contenedores principales */
+header, section, footer {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 40px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+header:hover, section:hover, footer:hover { transform: translateY(-5px); }
+
+/* Imagen de perfil */
+.profile-photo {
+  display: block;
+  margin: 0 auto 25px auto;
+  width: 180px; height: 180px;
+  object-fit: cover; object-position: top;
+  border-radius: 50%;
+  border: 4px solid #00aaff;
+  box-shadow: 0 0 15px #00aaffcc;
+  transition: box-shadow 0.4s ease;
+}
+.profile-photo:hover { box-shadow: 0 0 25px #00e5ffdd; }
+
+/* Titulares */
+h1 {
+  text-align: center; font-size: 3rem; font-weight: 700;
+  color: #00e5ff; margin-bottom: 10px; letter-spacing: 2px; text-shadow: 0 0 8px #00e5ff88;
+}
+h2 { text-align: center; font-size: 1.6rem; font-weight: 400; color: #b0dfff; margin-bottom: 20px; }
+
+/* About */
+.about p{
+  font-size: 1.15rem; color: #d0d0d0; max-width: 700px; margin: 0 auto;
+  text-align: justify; line-height: 1.8; letter-spacing: .02em;
+}
+
+/* Proyectos (lista simple) */
+.projects h3{
+  font-size: 2rem; color: #00aaff; margin-bottom: 15px; text-align: center; text-shadow: 0 0 6px #00aaffbb;
+}
+.projects ul{ list-style: none; padding-left: 0; max-width: 700px; margin: 0 auto; color:#c0dfff; }
+.projects ul li{
+  background: rgba(0,170,255,.15); margin-bottom: 12px; padding: 12px 18px; border-radius: 10px; font-size: 1.1rem;
+  transition: background-color .3s ease;
+}
+.projects ul li:hover{ background: rgba(0,230,255,.3); box-shadow: 0 4px 10px rgba(0,230,255,.3); }
+
+/* Botones genéricos en contenedor */
+.download-cv{ text-align: center; margin: 40px 0 0; }
+.download-cv > * + *{ margin-left: 12px; }
+
+/* Botón CV */
+#downloadCvBtn{
+  background:#00aaff; color:#002f6c; border:none; padding:15px 35px; font-size:1.3rem; font-weight:700;
+  border-radius:30px; cursor:pointer; box-shadow:0 6px 20px rgba(0,170,255,.6); transition:all .3s ease; position:relative; overflow:hidden; user-select:none;
+}
+#downloadCvBtn::before{ content:"💼"; margin-right:12px; font-size:1.4rem; transition:transform .3s ease; }
+#downloadCvBtn:hover{ background:#00e5ff; color:#001f3f; box-shadow:0 8px 30px rgba(0,230,255,.9); }
+#downloadCvBtn:hover::before{ transform:translateY(4px); }
+
+/* Footer */
+footer{ text-align:center; font-size:.95rem; color:#9db4cc; padding:20px 10px; user-select:none; }
+footer a{ color:#00aaff; text-decoration:none; font-weight:600; transition:color .25s ease; }
+footer a:hover{ color:#00e5ff; text-decoration:underline; }
+
+/* Menú fijo */
+.navbar{
+  position: fixed; top:0; left:0; width:100%;
+  background: rgba(0,47,108,.95); box-shadow: 0 2px 10px rgba(0,0,0,.7); z-index:1000;
+}
+.navbar ul{ display:flex; justify-content:center; list-style:none; padding:10px 0; margin:0; flex-wrap:wrap; gap:6px 14px; }
+.navbar ul li{ margin:0; }
+.navbar ul li a{
+  color:#00e5ff; text-decoration:none; font-weight:600; font-size:1.1rem; padding:8px 12px; border-radius:6px;
+  transition:background-color .3s ease, color .3s ease;
+}
+.navbar ul li a:hover, .navbar ul li a:focus, .navbar a.active{ background:#00aaff; color:#002f6c; }
+html{ scroll-behavior:smooth; }
+section{ margin-bottom:40px; }
+
+/* Experiencia 2 columnas */
+.student-experience-section{ padding:2rem; margin-bottom:3rem; }
+.experience-container{ display:flex; gap:2rem; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; }
+.left-column{ flex:2; min-width:300px; }
+.left-column p{ text-align:justify; }
+.buttonright{ flex:2; display:flex; justify-content:center; align-items:center; min-width:250px; padding-top:2.5rem; margin-left:auto; }
+.button_right_general{ flex:2; display:flex; justify-content:center; align-items:center; min-width:250px; padding-top:1rem; margin-left:auto; }
+
+/* Botón Artículo */
+#downloadartBtn{
+  background:#00aaff; color:#002f6c; border:none; padding:15px 35px; font-size:1.3rem; font-weight:700; border-radius:30px; cursor:pointer;
+  box-shadow:0 6px 20px rgba(0,170,255,.6); transition:all .3s ease; position:relative; overflow:hidden; user-select:none;
+}
+#downloadartBtn::before{ content:"📄"; margin-right:12px; font-size:1.4rem; transition:transform .3s ease; }
+#downloadartBtn:hover{ background:#00e5ff; color:#001f3f; box-shadow:0 8px 30px rgba(0,230,255,.9); }
+#downloadartBtn:hover::before{ transform:translateY(4px); }
+
+/* Botones Certificaciones (IDs unificados) */
+#downloadCGDABtn, #downloadCPBIBtn, #downloadExcelBtn{
+  background:#00aaff; color:#002f6c; border:none; padding:15px 35px; font-size:1.3rem; font-weight:700; border-radius:30px; cursor:pointer;
+  box-shadow:0 6px 20px rgba(0,170,255,.6); transition:all .3s ease; position:relative; overflow:hidden; user-select:none;
+}
+#downloadCGDABtn::before{ content:"🎯"; margin-right:12px; font-size:1.4rem; transition:transform .3s ease; }
+#downloadCPBIBtn::before{ content:"📊"; margin-right:12px; font-size:1.4rem; transition:transform .3s ease; }
+#downloadExcelBtn::before{ content:"📗"; margin-right:12px; font-size:1.4rem; transition:transform .3s ease; }
+#downloadCGDABtn:hover, #downloadCPBIBtn:hover, #downloadExcelBtn:hover{ background:#00e5ff; color:#001f3f; box-shadow:0 8px 30px rgba(0,230,255,.9); }
+#downloadCGDABtn:hover::before, #downloadCPBIBtn:hover::before, #downloadExcelBtn:hover::before{ transform:translateY(4px); }
+
+/* Botón Agenda */
+#scheduleBtn{
+  background:#00aaff; color:#002f6c; border:none; padding:15px 35px; font-size:1.3rem; font-weight:700; border-radius:30px; cursor:pointer;
+  box-shadow:0 6px 20px rgba(0,170,255,.6); transition:all .3s ease; position:relative; overflow:hidden; user-select:none;
+}
+#scheduleBtn::before{ content:"📅"; margin-right:12px; font-size:1.4rem; transition:transform .3s ease; }
+#scheduleBtn:hover{ background:#00e5ff; color:#001f3f; box-shadow:0 8px 30px rgba(0,230,255,.9); }
+#scheduleBtn:hover::before{ transform:translateY(4px); }
+
+/* ====== GRID DE 6 TARJETAS (Casos) ====== */
+.cases .cases__wrap{
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 16px;
+  padding: 22px 22px 10px;
+}
+.cases h3{
+  text-align:center; font-size:2rem; color:#00aaff; margin-bottom:14px; text-shadow:0 0 6px #00aaff88;
+}
+.case-grid{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+@media (max-width:980px){ .case-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:640px){ .case-grid{ grid-template-columns:1fr; } }
+
+.case-card{
+  background: rgba(0,170,255,.10);
+  border: 1px solid rgba(0,229,255,.25);
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.case-card:hover{ transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0,0,0,.35); border-color: rgba(0,229,255,.45); }
+.case-card h4{ margin:2px 0 8px; color:#b0dfff; font-size:1.05rem; }
+.case-card ul{ list-style:none; margin:0; padding:0; }
+.case-card li{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 10px;
+  padding: 8px 10px; margin: 6px 0; color:#dfefff;
+}
+.case-card b{ color:#fff; }
+.case-meta{ margin-top:8px; color:#9db4cc; font-size:.93rem; }
+
+/* HABILIDADES en 3 columnas */
+#habilidades ul{
+  display:grid; grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px 24px; list-style:none; padding-left:0; margin:0;
+}
+#habilidades li{ display:flex; align-items:flex-start; gap:8px; color:#dfefff; }
+#habilidades li::before{ content:"▹"; color:#00e5ff; line-height:1; margin-top:2px; }
+
+/* CERTIFICACIONES en 3 columnas */
+.cert-grid{
+  display:grid; grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px; justify-items:center; margin-top:14px;
+}
+.cert-grid > *{ width:100%; max-width:320px; }
+
+/* Accesibilidad */
+:focus-visible{ outline:2px solid #00e5ff; outline-offset:2px; }
+
+/* ========= RESPONSIVO ========= */
+header, section, footer { max-width: min(900px, 92vw); }
+.profile-photo{ width: clamp(96px, 22vw, 180px); height: clamp(96px, 22vw, 180px); }
+h1{ font-size: clamp(1.6rem, 4.5vw, 3rem); }
+h2{ font-size: clamp(1.1rem, 3.2vw, 1.6rem); }
+.projects h3{ font-size: clamp(1.3rem, 4vw, 2rem); }
+
+@media (max-width: 992px){
+  header, section, footer { padding: 24px; }
+  .navbar ul li a { font-size: 1rem; padding: 6px 10px; }
+}
+@media (max-width: 768px){
+  body { padding: 20px 12px; padding-top: 60px; }
+  .experience-container { flex-direction: column; gap: 1rem; }
+  .left-column, .buttonright { min-width: 100%; }
+  .download-cv { margin-top: 24px; }
+  .download-cv > * + *{ margin-left: 0; margin-top:10px; display:block; width:100%; }
+}
+@media (max-width: 480px){
+  header, section, footer { padding: 18px; }
+  .navbar { position: sticky; top: 0; }
+  .navbar ul li a { font-size: .95rem; padding: 6px 8px; }
+  .projects ul li { font-size: 1rem; padding: 10px 14px; }
+}
+
+/* Grid 3 columnas */
+.cert-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+  justify-items:center;
+  margin-top:14px;
+}
+@media (max-width:980px){ .cert-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:560px){ .cert-grid{ grid-template-columns:1fr; } }
+.cert-grid > *{ width:100%; max-width:320px; }
+
+/* Estilos unificados de los 3 botones */
+#downloadCGDABtn, #downloadCPBIBtn, #downloadCMEXCELBtn{
+  background:#00aaff; color:#002f6c; border:none;
+  padding:15px 35px; font-size:1.3rem; font-weight:700; border-radius:30px; cursor:pointer;
+  box-shadow:0 6px 20px rgba(0,170,255,.6); transition:all .3s ease; position:relative; overflow:hidden; user-select:none;
+}
+#downloadCGDABtn::before{ content:"🎯"; margin-right:12px; font-size:1.4rem; transition:transform .3s ease; }
+#downloadCPBIBtn::before{ content:"📊"; margin-right:12px; font-size:1.4rem; transition:transform .3s ease; }
+#downloadCMEXCELBtn::before{ content:"📗"; margin-right:12px; font-size:1.4rem; transition:transform .3s ease; }
+#downloadCGDABtn:hover, #downloadCPBIBtn:hover, #downloadCMEXCELBtn:hover{
+  background:#00e5ff; color:#001f3f; box-shadow:0 8px 30px rgba(0,230,255,.9);
+}
+#downloadCGDABtn:hover::before, #downloadCPBIBtn:hover::before, #downloadCMEXCELBtn:hover::before{
+  transform:translateY(4px);
+}
+
+/* Grid de contacto */
+#contacto .contact-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px 18px;
+  margin-top:12px;
+}
+@media(max-width:700px){ #contacto .contact-grid{ grid-template-columns:1fr; } }
+
+#contacto .contact-item{
+  display:flex; align-items:center; gap:12px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:12px; padding:12px 14px;
+}
+#contacto .contact-item::before{
+  content: attr(data-icon);
+  display:inline-flex; align-items:center; justify-content:center;
+  width:32px; height:32px; border-radius:8px;
+  background:rgba(0,170,255,.18);
+  border:1px solid rgba(0,229,255,.35);
+  font-weight:700; color:#00e5ff;
+}
+#contacto .ci-label{
+  font-size:.9rem; color:#9db4cc; min-width:92px;
+}
+
+/* Enlaces dentro de contacto */
+#contacto a:link, #contacto a:visited{ color:#c0dfff; text-decoration:none; }
+#contacto a:hover{ color:#00e5ff; text-decoration:underline; }
+
+/* Acciones de contacto */
+.contact-actions{
+  margin-top:18px;
+  display:flex; justify-content:center; gap:12px; flex-wrap:wrap;
+}
+.contact-actions .btn-ghost{
+  display:inline-block;
+  padding:15px 35px; border-radius:30px; font-weight:700; font-size:1.1rem;
+  border:1px solid rgba(0,229,255,.55);
+  background:transparent; color:#b0dfff; text-decoration:none;
+  box-shadow:0 6px 20px rgba(0,170,255,.25);
+  transition:all .25s ease;
+}
+.contact-actions .btn-ghost:hover{
+  color:#001f3f; background:#00e5ff; border-color:#00e5ff;
+  box-shadow:0 8px 30px rgba(0,230,255,.4);
+}
+
+/* Enviar correo como botón azul */
+#contacto .contact-actions .btn-ghost {
+  display:inline-block;
+  background:#00aaff;
+  color:#002f6c;                /* texto oscuro como los otros */
+  border:none;
+  padding:15px 35px;
+  font-size:1.1rem;
+  font-weight:700;
+  border-radius:30px;
+  box-shadow:0 6px 20px rgba(0,170,255,.6);
+  transition:all .25s ease;
+  text-decoration:none;
+}
+#contacto .contact-actions .btn-ghost::before{
+  content:"📧";
+  margin-right:12px;
+  font-size:1.3rem;
+  vertical-align:middle;
+}
+#contacto .contact-actions .btn-ghost:hover{
+  background:#00e5ff;
+  color:#001f3f;
+  box-shadow:0 8px 30px rgba(0,230,255,.9);
+}
+
+/* Forzar color del enlace sobre la regla general de #contacto a */
+#contacto .contact-actions .btn-ghost:link,
+#contacto .contact-actions .btn-ghost:visited { color:#002f6c; }
+
+/* FORMACIÓN: viñetas personalizadas y mejor alineación */
+#formacion ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:14px;
+}
+
+#formacion li{
+  position:relative;
+  padding:12px 14px 12px 44px;   /* sangría hacia la derecha */
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:12px;
+  line-height:1.65;
+}
+
+#formacion li::before{
+  content:"";                      /* viñeta */
+  position:absolute;
+  left:14px;                       /* controla cuán a la derecha inicia */
+  top:16px;
+  width:12px; height:12px;
+  border-radius:50%;
+  background:#00e5ff;
+  box-shadow:0 0 0 5px rgba(0,229,255,.15), 0 0 10px #00e5ff88;
+}
+
+#formacion li strong{
+  display:block;
+  color:#ffffff;
+  margin-bottom:2px;
+  letter-spacing:.2px;
+}
+
+#formacion li:last-child{ margin-bottom:0; }

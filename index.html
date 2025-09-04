@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brayan Téllez | Actuario y Científico de Datos</title>
+    <meta name="description" content="Portafolio profesional de Brayan Téllez." />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="./styles.css?v=1">
+  </head>
+  <body>
+    <!-- Menú fijo -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#Student_Experience">Experiencia</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#casos">Casos</a></li>
+        <li><a href="#certificaciones">Certificaciones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <header id="inicio">
+      <img src="Brayan_Foto.jpg" alt="Retrato profesional de Brayan Téllez" class="profile-photo" />
+      <h1>Brayan Téllez</h1>
+      <h2>Actuario · Científico de Datos</h2>
+      <div class="download-cv">
+        <button id="downloadCvBtn" type="button">Descargar CV</button>
+      </div>
+    </header>
+
+    <section id="sobre-mi" class="about">
+      <h2>SOBRE MÍ</h2>
+      <p>
+        Profesional de Business Intelligence orientado a resultados. Diseño y opero soluciones de analítica,
+        automatización contable y procesos de datos para generar valor medible. Aplico lenguajes de programación 
+        como Python, SQL y Alteryx para mejorar decisiones y eficiencia.
+      </p>
+    </section>
+
+    <section id="formacion">
+      <h2>FORMACIÓN</h2>
+      <ul>
+        <li><strong>Licenciatura en Actuaría (2022–2026)</strong><br/>Facultad de Contaduría y Administración<br/>Universidad Autonoma de Querétaro</li>
+        <li><strong>Diplomado en Transformación Digital y Ciencia de Datos (2025)</strong><br/>Facultad de Informática<br/>Universidad Autonoma de Querétaro</li>
+      </ul>
+    </section>
+
+    <section id="Student_Experience" class="student-experience-section">
+      <div class="experience-container">
+        <div class="left-column">
+          <h2>EXPERIENCIA ESTUDIANTIL / PUBLICACIONES</h2>
+          <p>
+            Autor del artículo “Avances de iniciativas ESG en México: un análisis contemporáneo” para la revista
+            Verano de Introducción UAQ 2024. Evaluación de impactos financieros y de sostenibilidad con Python
+          </p>
+        </div>
+        <div class="buttonright">
+          <button id="downloadartBtn" type="button">Ver artículo</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <h2>HABILIDADES</h2>
+      <ul>
+        <li>Excel Avanzado</li>
+        <li>Alteryx</li>
+        <li>SQL</li>
+        <li>Python</li>
+        <li>R Studio</li>
+        <li>Power BI</li>
+        <li>Modelos Forecasting</li>
+        <li>ETL · RPA</li>
+        <li>AWS Athena</li>
+      </ul>
+    </section>
+
+    <section id="proyectos" class="projects">
+      <h3>PROYECTOS</h3>
+      <ul>
+        <li>Dashboard de Indicadores Financieros en Power BI</li>
+        <li>Modelo ARIMA para predicción de EBITDA</li>
+        <li>Automatización de reportes con Alteryx, Python y Excel</li>
+      </ul>
+    </section>
+
+
+
+    <section id="casos" class="cases">
+      <div class="cases__wrap">
+        <h3>CASOS RESUELTOS</h3>
+    
+        <div class="case-grid">
+          <!-- 1 -->
+          <article class="case-card">
+            <h4>Master en SQL CxC</h4>
+            <ul>
+              <li><b>Problema:</b> Descarga de las carteras de crédito que tardaban de 1 a 2 horas por empresa</li>
+              <li><b>Acción:</b> Creación de la master CxC en SQL, y su posterior manipulación para presentar los reportes y conciliaciones.</li>
+              <li><b>Resultado:</b> <b>Diferencia $0</b> vs documento control; ejecución periódica de forma automática.</li>
+            </ul>
+            <p class="case-meta"><b>Stack:</b> SQL, Python, Alteryx · <b>Rol:</b> Automatización de reportes.</p>
+          </article>
+    
+          <!-- 2 -->
+          <article class="case-card">
+            <h4>Inventario + Traspasos + NIF </h4>
+            <ul>
+              <li><b>Problema:</b> Reportes manuales y conciliaciones mensuales.</li>
+              <li><b>Acción:</b> Réplica de los reportes via SQL, reglas de la automatización y traspasos.</li>
+              <li><b>Resultado:</b> <b>Cuadre mensual</b>; Tablero que se actualiza de forma mensual y diaria para el inventario y lead time.</li>
+            </ul>
+            <p class="case-meta"><b>Stack:</b> SQL, Alteryx, Power BI · <b>Rol:</b> Automatización de reportes.</p>
+          </article>
+    
+          <!-- 3 -->
+          <article class="case-card">
+            <h4>Estado de Resultados + Unit Economics</h4>
+            <ul>
+              <li><b>Problema:</b> Cierres tardíos sin detalle por ingresos, gostos, gastos de cada unidad de negocio.</li>
+              <li><b>Acción:</b> ETL Balanzas→Athena, pólizas automáticas, desglose de las cuentas.</li>
+              <li><b>Resultado:</b> Cierres a tiempo.</li>
+            </ul>
+            <p class="case-meta"><b>Stack:</b> Python, Alteryx, S3/Athena, SQL · <b>Rol:</b> Arquitectura y Automatización.</p>
+          </article>
+    
+          <!-- 4 -->
+          <article class="case-card">
+            <h4>Master SQL CxP</h4>
+            <ul>
+              <li><b>Problema:</b> Descarga de reportes manuales para conciliaciones mensuales.</li>
+              <li><b>Acción:</b> Creación de la master en SQL y posterior manipulación para presentar los reportes y conciliaciones.</li>
+              <li><b>Resultado:</b> <b>Unificación de fuentes de datos</b> y menor tiempo de análisis.</li>
+            </ul>
+            <p class="case-meta"><b>Stack:</b> SQL, Athena · <b>Rol:</b> Diseño y Gobierno de datos.</p>
+          </article>
+    
+          <!-- 5 -->
+          <article class="case-card">
+            <h4>Monitoreo de APV</h4>
+            <ul>
+              <li><b>Problema:</b> Registro irregular y poca visibilidad.</li>
+              <li><b>Acción:</b> Funnel lead→venta, SLA de contacto, alertas de omisión por registros erroneos.</li>
+              <li><b>Resultado:</b> Tasas de conversión mas altas y <b>ranking de asesores.</b> </li>
+            </ul>
+            <p class="case-meta"><b>Métricas:</b> Contacto 24h y win rate.</p>
+          </article>
+    
+          <!-- 6 -->
+          <article class="case-card">
+            <h4>Unidades por pagar</h4>
+            <ul>
+              <li><b>Problema:</b> Entrega tardía y falta de control sobre las unidades de pago a las financieras.</li>
+              <li><b>Acción:</b> Creación y unificación de reportes (Ventas, gastos, facturas pendientes, etc.).</li>
+              <li><b>Resultado:</b> <b>Entrega a tiempo de las Unidades que se tienen que pagar a tesorería evitando por completo la generación de intereses.</b></li>
+            </ul>
+            <p class="case-meta"><b>Entregable:</b> Accesos controlados a cuentas de bancos y ventas.</p>
+          </article>
+        </div>
+      </div>
+    </section>  
+
+
+
+    <section id="certificaciones">
+      <h2>CERTIFICACIONES</h2>
+      <div class="cert-grid">
+        <button id="downloadCGDABtn" type="button">Google Data Analytics</button>
+        <button id="downloadCPBIBtn" type="button">Power BI</button>
+        <button id="downloadCMEXCELBtn" type="button">Microsoft Excel</button>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>CONTACTO</h2>
+    
+      <div class="contact-grid">
+        <div class="contact-item" data-icon="✉️">
+          <span class="ci-label">Correo</span>
+          <a href="mailto:brayted14@gmail.com">brayted14@gmail.com</a>
+        </div>
+        <div class="contact-item" data-icon="📞">
+          <span class="ci-label">Teléfono</span>
+          <a href="tel:+527721056304">+52 772 105 6304</a>
+        </div>
+        <div class="contact-item" data-icon="in">
+          <span class="ci-label">LinkedIn</span>
+          <a href="https://linkedin.com/in/brayan-téllez-del-ángel-09a845308" target="_blank" rel="noopener">/Brayan Téllez</a>
+        </div>
+        <div class="contact-item" data-icon="⌂">
+          <span class="ci-label">GitHub</span>
+          <a href="https://github.com/brayant001" target="_blank" rel="noopener">/Brayan-GitHub</a>
+        </div>
+      </div>
+    
+      <div class="contact-actions">
+        <button id="scheduleBtn" type="button">Agendar llamada</button>
+        <a class="btn-ghost" href="mailto:brayted14@gmail.com">Enviar correo</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Brayan Téllez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
