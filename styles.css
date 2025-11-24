@@ -362,14 +362,6 @@ h2{ font-size: clamp(1.1rem, 3.2vw, 1.6rem); }
 
 #formacion li:last-child{ margin-bottom:0; }
 
-#formacion .formacion-titulo-btn {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-  text-align: left;
-  display: inline;  /* se ve como texto dentro del <li> */
+#formacion .formacion-titulo-click{
+  cursor: pointer;      /* para que se vea interactivo */
 }
