@@ -361,3 +361,13 @@ h2{ font-size: clamp(1.1rem, 3.2vw, 1.6rem); }
 }
 
 #formacion li:last-child{ margin-bottom:0; }
+
+.formacion-titulo-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
