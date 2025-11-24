@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     downloadCGDABtn: 'https://drive.google.com/file/d/1jE_dRaHqYMw575IVxFHFnR2EmDQMdIBs/view?usp=sharing',
     downloadCPBIBtn: 'https://drive.google.com/file/d/1U6zE20K8iSk3NlZD66C2MvVSKObVQWu8/view?usp=sharing',
     downloadCMEXCELBtn: 'https://drive.google.com/file/d/1vJpbIIpxnbbBYf04jf6_S6-mVfzd4LLz/view?usp=sharing',
+    downloadDip_CDTD_Btn:'https://drive.google.com/file/d/1GCz5lHzYAMIUlLdPYEwgKHlXQT8YDZ0a/view?usp=sharing',
     scheduleBtn: 'https://calendar.app.google/uxBoB9qceFgagE6s7'
   };
 
